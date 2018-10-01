@@ -15,19 +15,13 @@ public class Actividad4 {
         float kilometros = 0f ; 
         float minutos = 0f ;
         float segundos = 0f;
-        
+        float horas  = 0f;
         System.out.println("Por favor,introduzca los kilometros");
         kilometros =scan.nextFloat()*1.6f; 
         System.out.println("Por favor,introduzca los minutos");
         minutos =scan.nextFloat();
         System.out.println("Por favor,introduzca los segundos");
-        
-        segundos =0.01f*(scan.nextFloat()+minutos);
-        System.out.println(segundos);
-        segundos = segundos/60;
-        
-        System.out.println(kilometros/segundos);
-        
+        minutos =
        // minutos = (minutos + segundos);
     }
 }
