@@ -12,22 +12,19 @@ public class Actividad4 {
      Scanner scan = new Scanner(System.in);
         //1 milla --> 1.6Km
         //M/H
-        float kilometros = 0f ; 
-        float minutos = 0f ;
-        float segundos = 0f;
-        
+        float distancia ; 
+        float resultado;
+        float tiempo;
         System.out.println("Por favor,introduzca los kilometros");
-        kilometros =scan.nextFloat()*1.6f; 
+        distancia =scan.nextFloat()/1.6f;
         System.out.println("Por favor,introduzca los minutos");
-        minutos =scan.nextFloat();
+        tiempo =scan.nextFloat();
         System.out.println("Por favor,introduzca los segundos");
+        tiempo = (scan.nextFloat() / 60 + tiempo) /60;
+        resultado = distancia/tiempo;
+         
+         System.out.printf("%.2f ", resultado);
         
-        segundos =0.01f*(scan.nextFloat()+minutos);
-        System.out.println(segundos);
-        segundos = segundos/60;
-        
-        System.out.println(kilometros/segundos);
-        
-       // minutos = (minutos + segundos);
+       
     }
 }
