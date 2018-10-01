@@ -16,6 +16,7 @@ public class Actividad6 {
 celsius = (5/9) (fahrenheit - 32). El resultado debe mostrar una precisión de dos cifras decimales para los grados
         centígrados.*/
         Scanner scan = new Scanner(System.in);
+        
         float celsius = 0f;
         float fahrenheit = 0f;
         
