@@ -19,7 +19,8 @@ public class Actividad5 {
              precioFinal = scan.nextFloat();
              
              precioImpuestos = precioFinal*0.075f;
-             precioFinal = (int)(precioFinal+precioImpuestos);
+             
+             precioFinal = precioFinal+precioImpuestos;
              
              System.out.print("El recarga aplicado al producto de coste "+(precioFinal-(int)precioImpuestos)+
                      "\u20ac es de "+(int)precioImpuestos+"\u20ac \n");
