@@ -33,7 +33,6 @@ public class Actividad8 {
     
     }
 
-    private static boolean condicion(String vaaAAaamos_campeon) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
 }
+
