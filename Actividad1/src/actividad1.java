@@ -13,15 +13,18 @@ public class actividad1 {
             Scanner scan = new Scanner(System.in);
             float a = 0 ; 
             float b = 0 ;
-            
+            float c = 0 ;
             System.out.println("Introducir valores de a y b separados por un espacio");
             a = scan.nextFloat();
             b = scan.nextFloat();
-            
-            b=a+(a=b)-b;
+            c = b;
+            b = a;
+            a = c;
+            //b=a+(a=b)-b; esta es la otra opcion pero sufre desborde.
            //La salida no es exacta en B debido a que es necesario un redondeo.
-            //Buscar alternativa o mejor usar otra variable
-            System.out.println(a+" "+b);
+            
+            System.out.println("El valor de a ahora es"+a);
+            System.out.println("El valor de b ahora es "+b);
            
             }
 }

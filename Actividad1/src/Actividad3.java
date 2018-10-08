@@ -20,6 +20,8 @@ public class Actividad3 {
                 double altura=0;
                 double areaTotal=0;
                 double volumenTotal=0;
+                double vasoSinTapa;
+                double pegatina;
                 //REVISAR TIEMPOS DE COMPILACION.
                 //Pi se va a usar con Math.PI.
                 //http://www.profesorenlinea.cl/geometria/VolumenCilindro.html formulas
@@ -31,11 +33,13 @@ public class Actividad3 {
                 areaTotal = (2*Math.PI*radio*altura)+2*(Math.PI*Math.pow(radio,2));
                 //formula del volumen total del Cilindro
                 volumenTotal = (Math.PI*Math.pow(radio,2)*altura);
+                vasoSinTapa=(areaTotal -(Math.PI*Math.pow(radio,2)));
+                pegatina= (areaTotal -2*(Math.PI*Math.pow(radio,2)));
                 
-                System.out.println("la superfice del vaso con tapa = " + areaTotal);
-                System.out.println("el volumen total del vaso es de = " + volumenTotal);
-                System.out.println("la superficie del vaso sin tapa es = " + (areaTotal -(Math.PI*Math.pow(radio,2))));
-                System.out.println("la superficie de la pegatina = " + (areaTotal -2*(Math.PI*Math.pow(radio,2))));
+                System.out.printf("la superfice del vaso con tapa = %.2f \n", areaTotal);
+                System.out.printf("el volumen total del vaso es de = %.2f \n" , volumenTotal);
+                System.out.printf("la superficie del vaso sin tapa es = %.2f \n", vasoSinTapa );
+                System.out.printf("la superficie de la pegatina = %.2f" ,pegatina );
                  
         }
 }

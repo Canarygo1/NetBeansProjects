@@ -14,16 +14,17 @@ public class Actividad5 {
          public static void main(String[] args) {
              Scanner scan = new Scanner(System.in);
              float precioFinal= 0f ;
+             float precioInicial;
              float precioImpuestos = 0f;
              System.out.println("Por favor,introduzca el precio a calcular");
-             precioFinal = scan.nextFloat();
+             precioInicial = scan.nextFloat();
              
-             precioImpuestos = precioFinal*0.075f;
+             precioImpuestos = precioInicial*0.075f;
              
-             precioFinal = precioFinal+precioImpuestos;
+             precioFinal = precioInicial+precioImpuestos;
              
-             System.out.print("El recarga aplicado al producto de coste "+(precioFinal-(int)precioImpuestos)+
+             System.out.print("El recarga aplicado al producto de coste "+(precioInicial)+
                      "\u20ac es de "+(int)precioImpuestos+"\u20ac \n");
-             System.out.print("El coste total a pagar por el articulo es de"+precioFinal+"\u20ac");
+             System.out.print("El coste total a pagar por el articulo es de"+(precioInicial + (int)precioImpuestos)+"\u20ac");
          }
 }
