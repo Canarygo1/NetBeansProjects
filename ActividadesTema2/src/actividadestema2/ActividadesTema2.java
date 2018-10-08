@@ -16,7 +16,7 @@ public class ActividadesTema2 {
        int year;
       year=scan.nextInt();
       y=year;
-      int a =y%19
+      int a =y%19;
       int b = y/100;
       int c = y%100;
       int d = b/4;
@@ -25,30 +25,37 @@ public class ActividadesTema2 {
       int h = (19*a+b-d-g+15)%30;
       int j = c/4;
       int k= c % 4 ;
-      int m = (a+11*h)/7;
+      int m = (a+11*h)/319;
       int r = (2*e+2*j-k-h+m+32)%7;
+      int n = (h - m+r+90)/25;
+      int p = (h-m+r+n+19)%32;
       
-            
+      
+      System.out.print(y +" es el agno del ");
         
        
-    year =(y%12);
-      switch (y) {
-          case 1: System.out.print("Mono");break;
-          case 2: System.out.print("Gallo");break;
-          case 3: System.out.print("Perro");break;
-          case 4: System.out.print("Jabali");break;
-          case 5: System.out.print("Rata");break;
-          case 6: System.out.print("Buey");break;
-          case 7: System.out.print("Tigre");break;
-          case 8: System.out.print("Liebre");break;
-          case 9: System.out.print("Dragon");break;
-          case 10: System.out.print("Serpiente");break;
-          case 11: System.out.print("Caballo");break;
-          case 12: System.out.print("Cabra");break;
+    year =(year%12);
+      switch (year) {
+          case 0: System.out.print("Mono");break;
+          case 1: System.out.print("Gallo");break;
+          case 2: System.out.print("Perro");break;
+          case 3: System.out.print("Jabali");break;
+          case 4: System.out.print("Rata");break;
+          case 5: System.out.print("Buey");break;
+          case 6: System.out.print("Tigre");break;
+          case 7: System.out.print("Liebre");break;
+          case 8: System.out.print("Dragon");break;
+          case 9: System.out.print("Serpiente");break;
+          case 10: System.out.print("Caballo");break;
+          case 11: System.out.print("Cabra");break;
      
           
+          
       }
-    
+            System.out.print("El domingo de pascua es "+p+"/"+n+"/"+y);
+            
+            
+            
     }
     
 }
