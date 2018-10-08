@@ -13,7 +13,7 @@ public class ActividadC {
     public static void main(String[] args) {
 
     Scanner scan = new Scanner(System.in);
-
+    System.out.println("Introduzca la cantidad de dinero");
     float dinero ;
     float cent50;
     float cent10;

@@ -36,18 +36,18 @@ public class ActividadesTema2 {
        
     year =(year%12);
       switch (year) {
-          case 0: System.out.print(" del Mono");break;
-          case 1: System.out.print("del Gallo");break;
-          case 2: System.out.print("del Perro");break;
-          case 3: System.out.print("del Jabali");break;
-          case 4: System.out.print("de la Rata");break;
-          case 5: System.out.print("del Buey");break;
-          case 6: System.out.print("del Tigre");break;
-          case 7: System.out.print("de la Liebre");break;
-          case 8: System.out.print("del Dragon");break;
-          case 9: System.out.print("de la Serpiente");break;
-          case 10: System.out.print("del Caballo");break;
-          case 11: System.out.print("de la Cabra");break;
+          case 0: System.out.print(" del Mono.");break;
+          case 1: System.out.print("del Gallo.");break;
+          case 2: System.out.print("del Perro.");break;
+          case 3: System.out.print("del Jabali.");break;
+          case 4: System.out.print("de la Rata.");break;
+          case 5: System.out.print("del Buey.");break;
+          case 6: System.out.print("del Tigre.");break;
+          case 7: System.out.print("de la Liebre.");break;
+          case 8: System.out.print("del Dragon.");break;
+          case 9: System.out.print("de la Serpiente.");break;
+          case 10: System.out.print("del Caballo.");break;
+          case 11: System.out.print("de la Cabra.");break;
      
           
           
