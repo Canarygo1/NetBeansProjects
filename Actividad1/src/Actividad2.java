@@ -18,9 +18,7 @@ public class Actividad2 {
                 double altura=0;
                 double areaTotal=0;
                 double volumenTotal=0;
-                //REVISAR TIEMPOS DE COMPILACION.
-                //Pi se va a usar con Math.PI.
-                //http://www.profesorenlinea.cl/geometria/VolumenCilindro.html formulas
+
                 System.out.println("Por favor,introduzca el radio en cm");
                 radio =scan.nextDouble();
                  System.out.println("Por favor,introduzca la altura en cm");

@@ -16,6 +16,7 @@ public class ActividadA {
        float precioLitro = 0f;
        float precioTransporte = 0f;
        float tiempo = 86399;
+       float horas ;
        float velocidad = 0f ; 
        float minutos = 0f;
        float segundos = 0f;
@@ -27,14 +28,22 @@ public class ActividadA {
        kmPorLitros = scan.nextFloat();
        System.out.print("Indicar el precio en € del litro de combustible aproximado : ");
        precioLitro = scan.nextFloat();
+       
        precioTransporte = (distancia / kmPorLitros) * precioLitro;
        
-       velocidad = distancia / (tiempo / 3600);
-       tiempo = tiempo /3600;
-       minutos = (86399 - (tiempo*3600))/60;
-       segundos = 86399 - ((tiempo*3600)+(minutos*60));
-       System.out.printf("%.2f %.2f ",precioTransporte,velocidad );
-       System.out.println((int)tiempo2);
+      velocidad = distancia / (tiempo / 3600);
+      
+       horas = (int)tiempo/3600;
+       tiempo = tiempo-(horas*3600);
+       minutos = (int)tiempo/60;
+       
+       tiempo = tiempo -(segundos*60);
+       segundos = (int)tiempo;
+       segundos = segundos/60;
+       
+       System.out.printf("El coste total del transporte es de : %.2f \n",precioTransporte);
+       System.out.printf("La velocidad necesaria sera de %.2f km/h para cumplir con el tiempo en h:m:s de ", velocidad);
+       System.out.print((int)horas+":"+(int)minutos+":"+(int)segundos);
      
      }
 }

@@ -18,7 +18,7 @@ public class Actividad4 {
         tiempo = (scan.nextFloat() / 60 + tiempo) /60;
         resultado = distancia/tiempo;
          
-         System.out.printf("%.2f ", resultado);
+         System.out.printf("El corredor corre %.2f millas en una hora", resultado);
         
        
     }
