@@ -18,13 +18,13 @@ public class Actividad2 {
         float peso;
         float altura;
         float imc;
-        float libras;
+        float libras = 0;
         System.out.print("Introducir el peso");
         peso = scan.nextFloat();
         System.out.print("Introducir la altura");
         altura= scan.nextFloat();
         imc = peso/(float)Math.pow(altura,2);
-        System.out.printf("El IMC es de %.2f eso indica ",imc);
+        System.out.printf("El IMC es de %.2f eso indica ",(float)imc);
         
         if (imc<18.5)
             System.out.print("poco peso");
@@ -35,10 +35,10 @@ public class Actividad2 {
             else if (imc>30.00)
                 System.out.print("exceso de peso");
         
-
+        libras = (peso*2.205f);
         System.out.printf("\n %-15s | %15s" ,"kilogramos","Libras\n");
         System.out.printf("----------------------------------\n");
-        System.out.printf("\n %-15.0f | %15.0f" , kilogramos , libras);
+        System.out.printf("\n %-15.0f | %15.0f" ,peso , libras);
         
         }
 }

@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Actividad9a {
          public static void main(String[] args) {
          Scanner scan = new Scanner(System.in);
-             double numerolot ;
+             double numerolot = 23 ;
              int numerosindec;
              int numeroApuesta;
              int apuesta1;
@@ -21,7 +21,7 @@ public class Actividad9a {
              int numero2;
              int premiado = 0;
              
-             numerolot= Math.random()*100;
+             //numerolot= Math.random()*100;
              
              System.out.println("Introducir tu apuesta solo dos numeros");
              numeroApuesta = scan.nextInt();
